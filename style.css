@@ -1,0 +1,117 @@
+:root {
+    --Emme-White: rgb(255, 255, 255);
+    --until-blue: rgb(116, 187, 182);
+    --pistache: rgb(192, 219, 66);
+    --Cristian-gray: rgb(218, 218, 220);
+    --big-blue: rgb(44, 177, 173);
+    --small-blue: rgb(75, 188, 191);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cristian-gray);
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url('./imgs/background.jpg');
+}
+
+h1 {
+    color: var(--big-blue);
+    padding: 30px 0px 15px 30px;
+    font-size: 24px;
+}
+
+h2 {
+    color: var(--Emme-White);
+    padding: 35px 0px 15px 30px;
+    font-size: 18px;
+}
+
+p {
+    padding: 5px 30px;
+}
+
+p.pistache {
+    color: var(--pistache);
+    font-weight: bolder;
+}
+
+p.pressao {
+    color: var(--Cristian-gray);
+    padding-left: 10px;
+}
+
+span{
+   color: var(--Emme-White);
+   font-size: 32px;
+   font-weight: bold;
+   padding: 0px 5px 0px 20px;
+}
+
+li {
+    padding: 2px 0px 0px 30px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    color: var(--Emme-White);
+    background-color: var(--pistache);
+    height: 20%;
+    width: 70%;
+    margin: 20px 10px 10px 45px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px 0.3px gray;
+    transition: 0.2s ease all;
+}
+
+button:hover {
+    background-color: rgb(137, 161, 30);
+}
+
+.big-box {
+    font: 16px 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 75vh;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 6px 0.3px gray;
+}
+
+.top-box {
+    color: var(--Cristian-gray);
+    background-color: var(--Emme-White);
+    width: 100%;
+    height: 100%;
+}
+
+.double-box {
+    display: flex;
+    width: 100%;
+    height: 130%;
+}
+
+.double-box section {
+    width: 50%;
+}
+
+.left-box {
+    color: var(--Emme-White);
+    background-color: var(--big-blue);
+}
+
+.right-box {
+    color: var(--Cristian-gray);
+    background-color: var(--small-blue);
+    list-style: none;
+}
